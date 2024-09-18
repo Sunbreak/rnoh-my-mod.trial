@@ -32,6 +32,16 @@ $ rm -rf android ios
 
 2. 参考[环境搭建](https://gitee.com/openharmony-sig/ohos_react_native/blob/0.72.5-ohos-5.0-release/docs/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md)配置前端工程
 
+3. 新建pack文件夹，新建`pack/package.json`和`pack/src/NativeMyMod.ts`文件
+
+4. 打包`react-native-my-mod-0.1.0.tgz`
+
+5. 前端example工程更新依赖`react-native-my-mod-0.1.0.tgz`，添加示例代码
+
+```sh
+$ cd pack && npm pack --pack-destination ..
+```
+
 ## 创建客户端工程
 
 1. 使用DevStudio新建Empty Ability工程MyApplication，移动到harmony
