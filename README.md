@@ -49,6 +49,12 @@ $ cd pack && npm pack --pack-destination ..
 3. 参考[环境搭建](https://gitee.com/openharmony-sig/ohos_react_native/blob/0.72.5-ohos-5.0-release/docs/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md)配置客户端工程
 4. 新建Static Library模块my_mod
 
+5. 运行codegen生成TurboModule注册代码
+
+```sh
+$ cd example && npm run codgen
+```
+
 # 参考
 
 自定义TurboModule的实现：

@@ -8,7 +8,8 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "dev": "react-native bundle-harmony --dev"
+    "dev": "react-native bundle-harmony --dev",
+    "codegen": "react-native codegen-harmony --no-safety-check --cpp-output-path ../harmony/my_mod/src/main/cpp/generated --rnoh-module-path ../harmony/entry/oh_modules/@rnoh/react-native-openharmony"
   },
   "dependencies": {
     "react": "18.2.0",
