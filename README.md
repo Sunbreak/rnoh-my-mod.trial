@@ -55,6 +55,12 @@ $ cd pack && npm pack --pack-destination ..
 $ cd example && npm run codgen
 ```
 
+6. 配置my_mod模块依赖rnoh.har：修改my_mod的`oh_package.json5`，新增my_mod的`CMakeList.txt`
+
+7. 新增MyMod的C++注册代码`MyModPackage.h`和ArkTS实现代码`MyModePackage.ts`、`MyModeModule.ts`
+
+8. 配置entry模块的依赖my_mod模块：修改entry的`oh_package.json5`和entry的`CMakeList.txt`
+
 # 参考
 
 自定义TurboModule的实现：
